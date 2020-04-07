@@ -16,6 +16,7 @@ int calculateSquareEquality(int a, int b, int c, float* x1, float* x2);
 void doubleOddNumbersOfArray();
 void startDecording();
 int lsn11();
+int lsn13();
 
 int main() {
 	
@@ -25,6 +26,7 @@ int main() {
 	\0 символ конца строки
 	*/
 	setlocale(LC_ALL, "Russian");
+	lsn13();
 	lsn11();
 	startDecording();
 	//doubleOddNumbersOfArray();

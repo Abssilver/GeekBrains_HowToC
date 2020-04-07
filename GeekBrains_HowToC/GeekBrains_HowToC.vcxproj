@@ -152,6 +152,7 @@
     <ClCompile Include="lsn10.c" />
     <ClCompile Include="lsn11.c" />
     <ClCompile Include="lsn12.c" />
+    <ClCompile Include="lsn13.c" />
     <ClCompile Include="lsn8.c" />
     <ClCompile Include="lsn9.c" />
     <ClCompile Include="Main.c" />
@@ -163,6 +164,7 @@
     <ClInclude Include="lsn10.h" />
     <ClInclude Include="lsn11.h" />
     <ClInclude Include="lsn12.h" />
+    <ClInclude Include="lsn13.h" />
     <ClInclude Include="lsn7_pointers.h" />
     <ClInclude Include="lsn8.h" />
     <ClInclude Include="lsn9.h" />
