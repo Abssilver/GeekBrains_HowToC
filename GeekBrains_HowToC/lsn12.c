@@ -19,7 +19,7 @@ void printFraction(Fraction f) {
 		printf("%d", f.integer);
 }
 
-void fractionMultiply(Fraction f1, Fraction f2, Fraction* result){
+void fractionMultiply(Fraction f1, Fraction f2, Fraction * result){
 	result->integer = f1.integer * f2.integer;
 	result->divisible = f1.divisible * f2.divisible;
 	result->divisor = f1.divisor * f2.divisor;
@@ -39,7 +39,8 @@ int lsn12(){
 	puts("");
 	printFraction(f2);
 	puts("");
-	printFraction(&result);
+	fractionMultiply(f1, f2, &result);
+	printFraction(result);
 
 	return 0;
 }
