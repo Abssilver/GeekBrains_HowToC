@@ -15,6 +15,7 @@ int isPrime(int number);
 int calculateSquareEquality(int a, int b, int c, float* x1, float* x2);
 void doubleOddNumbersOfArray();
 void startDecording();
+int lsn11();
 
 int main() {
 	
@@ -24,6 +25,7 @@ int main() {
 	\0 символ конца строки
 	*/
 	setlocale(LC_ALL, "Russian");
+	lsn11();
 	startDecording();
 	//doubleOddNumbersOfArray();
 /*
