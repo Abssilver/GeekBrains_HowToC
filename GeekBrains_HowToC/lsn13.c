@@ -4,7 +4,7 @@
 int lsn13() {
 	FILE *f;
 	errno_t error;
-	error = fopen_s(&f, "lsn13_file.txt", "w+"); //r=read, w=write, a=append, rb, wb, ad;
+	error = fopen_s(&f, "lsn13_file.txt", "w+"); //r=read, w=write, a=append, rb, wb, ab - where b - binary;
 	if (error == 0) {
 		fprintf(f, "Hello, files! %s", "We did it!\n");
 		fclose(f);

@@ -17,6 +17,11 @@ void doubleOddNumbersOfArray();
 void startDecording();
 int lsn11();
 int lsn13();
+int lsn14();
+void ConverterFunction();
+void Rectangles();
+void Wrapper();
+void DistanceCalculation();
 
 int main() {
 	
@@ -26,8 +31,13 @@ int main() {
 	\0 символ конца строки
 	*/
 	setlocale(LC_ALL, "Russian");
-	lsn13();
-	lsn11();
+	//lsn13();
+	//lsn11();
+	//lsn14();
+	//ConverterFunction();
+	//Wrapper();
+	//Rectangles();
+	DistanceCalculation();
 	startDecording();
 	//doubleOddNumbersOfArray();
 /*
