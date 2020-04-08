@@ -25,7 +25,23 @@ void ConverterFunction() {
 		else printf(p);
 	}
 }
-
+/* Speaker's solution
+void decToBin(int in, char* result) {
+	char out[64];
+	int i = 0;
+	int temp = in;
+	while (temp != 0) {
+		temp = temp >> 1;
+		i++;
+	}
+	out[i] = '\0';
+	while (in > 0){
+		out[--i] = (in % 2) ? '1' : '0';
+		in /= 2;
+	}
+	strcat(result, out);
+}
+*/
 /*
 Описать структуру "прямоугольник", содержащую целочисленные значения 
 длины, ширины, периметра и площади прямоугольника.
@@ -37,11 +53,18 @@ struct rectangle {
 	int length;
 	int width;
 	int perimeter;
-	int square;
+	int area;
 };
 
 typedef struct rectangle Rectangle;
-
+/*
+typedef struct rectangle{
+	int height;
+	int width;
+	int perimeter;
+	int area;
+} Rectangle;
+*/
 void CreateRectangle(int length, int width, Rectangle* rect) {
 	rect->length = length;
 	rect->width = width;
@@ -49,7 +72,7 @@ void CreateRectangle(int length, int width, Rectangle* rect) {
 
 void CalculatePerimeterAndSquare(Rectangle * rect) {
 	rect->perimeter = (rect->length + rect->width) * 2;
-	rect->square = rect->length * rect->width;
+	rect->area = rect->length * rect->width;
 }
 
 void Rectangles(){
@@ -61,8 +84,8 @@ void Rectangles(){
 	CalculatePerimeterAndSquare(&r1);
 	CalculatePerimeterAndSquare(&r2);
 
-	printf("%d - perimeter, %d - square\n", r1.perimeter, r1.square);
-	printf("%d - perimeter, %d - square\n", r2.perimeter, r2.square);
+	printf("%d - perimeter, %d - square\n", r1.perimeter, r1.area);
+	printf("%d - perimeter, %d - square\n", r2.perimeter, r2.area);
 }
 
 /*
